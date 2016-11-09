@@ -1,0 +1,6 @@
+on click fight button,
+capture snippets of notable lyrics, save them as an array (1, 2, 3, 4) and call them out each time fight is clicked.
+
+add epic music as background music
+
+only play song of hero if they win or song of whoever kills hero plays

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--Declaring jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--Bootstrap theme - paper-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+
+	<!--Google Font - Shrikhand -->
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<title>RPG</title>
+</head>
+<body>
+	<!--BEGIN WRAPPER -->
+	<div class="wrapper"> 
+
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-10">
+				</div>
+				<div class="col-md-1 text-right">
+					<i class="fa fa-pause hvr-icon-pop" aria-hidden="true" id="musicPause"></i>
+				</div>
+			</div>
+        	<h1 class="text-center">90's Pop Stars RPG</h1>
+         	<h3 class="text-center" id="statsArea">Battle using the hottest stars circa 1997</h3>
+         </div>
+
+    	<!--CHARACTERS AREA-->
+		<div class="row text-center">
+			<!--INSTRUCTIONS-->
+			<div class="row">
+				<div class="col-md-12 text-center" id="instructions">
+					<h2 class="text-center">Click one of following stars as your hero</h2>
+				</div>
+			</div>
+			<!--END OF INSTRUCTIONS-->
+			<!--AREA WHERE SELECTED HERO GOES-->
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-center" id="heroAnnouncement"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center" id="heroArea">				
+						</div>
+					</div>
+				</div> 
+				<!--SECTION WITH SELECTABLE CHARCTERS-->
+				<div class="col-md-6" id="charSelection"> 
+					<span><img src="assets/images/britney.jpg" class="character enemy hvr-float-shadow" alt="britney bitch" id="britney"></span>
+					<span><img src="assets/images/christina.jpg" class="character enemy hvr-float-shadow" alt="best singer of the group" id="christina"></span>
+					<span><img src="assets/images/nick.jpg" class="character enemy hvr-float-shadow" alt="my man" id="nick"></span>
+					<span><img src="assets/images/justin.jpg" class="character enemy hvr-float-shadow" alt="whatever" id="justin"></span>
+				</div>
+				<!--AREA WHERE SELECTED ENEMY GOES-->
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-center" id="enemyAnnouncement"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center" id="enemyArea">
+						</div>	
+					</div> 
+				</div> <!--END OF ENEMY AREA-->
+			</div><!--END OF CHARACTERS AREA-->
+
+		<!--AREA WITH FIGHT AND RESET BUTTONS-->
+		<div class="row text-center">
+			<div class="col-md-12 button-row">
+				<button type="button" class="btn btn-danger fa-2x" id="fight">Sing!</button>
+				<button type="button" class="btn btn-primary fa-2x" id="reset">Reset</button>
+			</div>
+		</div>
+		<!--END OF BUTTONS AREA-->
+
+		<div class="row text-center">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8">
+				<h3 id="fightLog"></h3>
+			</div>
+			<div class="col-md-2">
+			</div>			
+		</div>
+	</div> 
+	<!--END WRAPPER-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
