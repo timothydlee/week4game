@@ -1,10 +1,23 @@
-body,
-h4,{
-	font-family: 'FontAwesome';
+
+/************************
+
+          GENERAL
+
+************************/
+body{
+  background-image: url("../images/background.jpg");
+  padding: 0;
 }
 
-.jumbotron{
-  font-family: 'Shrikhand', cursive;
+body,
+h4,{
+  font-family: 'FontAwesome';
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
 }
 
 #instructions{
@@ -12,16 +25,30 @@ h4,{
   font-weight: 100;
 }
 
-.wrapper{
-	margin: 0 auto;
-	width: 100%;
+.button-row{
+  margin-top: 2%;
 }
 
+/************************
+
+          HEADER
+
+************************/
+.jumbotron{
+  font-family: 'Shrikhand', cursive;
+  background: none;
+}
+
+/************************
+
+          IMAGES
+
+************************/
 img{
-	max-height: 200px;
-	max-width: 200px;
+  max-height: 200px;
+  max-width: 200px;
 }
-
+/*Creates border around selected heros and enemies*/
 #heroArea img{
   border: blue inset 4px;
 }
@@ -30,14 +57,11 @@ img{
   border: red inset 4px;
 }
 
+/*Class added to make selectable
+ character pictures disappear and therefore unselectable*/
 .hidden{
   display:none;
 }
-
-.button-row{
-  margin-top: 2%;
-}
-
 
 /************************
 
