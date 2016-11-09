@@ -41,7 +41,7 @@ window.onload = function() {
 	    britney: {
 	        name: "Britney",
 	        hp: 210,
-	        attack: 7,
+	        attack: 8,
 	        counterAtk: 14,
 	        musicValue: 0,
 	        pictureName: "britney.jpg"
@@ -56,8 +56,8 @@ window.onload = function() {
 	    },
 	    nick: {
 	        name: "Nick",
-	        hp: 280,
-	        attack: 4,
+	        hp: 260,
+	        attack: 6,
 	        counterAtk: 14,
 	        musicValue: 3,
 	        pictureName: "nick.jpg"
@@ -65,7 +65,7 @@ window.onload = function() {
 	    justin: {
 	        name: "T-Lake",
 	        hp: 180,
-	        attack: 10,
+	        attack: 11,
 	        counterAtk: 16,
 	        musicValue: 1,
 	        pictureName: "justin.jpg"
